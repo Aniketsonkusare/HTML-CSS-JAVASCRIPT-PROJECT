@@ -1,0 +1,48 @@
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+fieldset{
+    background-color: rgb(146, 224, 201);
+    border: 3px solid black;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    margin: 100px;
+}
+
+h1{
+    color: blue;
+}
+
+.button{
+    width: 66px;
+    padding: 20px;
+    margin: 0px 3px;
+    border: 2px solid black;
+    border-radius: 9px;
+    cursor: pointer;
+}
+
+
+    /* background-color: aquamarine; */
+    
+
+
+/* .m-w-20{    
+    max-width: 30vw;
+}    */
+
+.row{
+    margin: 8px 0px;
+}
+
+.row input{
+    width: 300px;
+    font-size: 20px;
+    margin: 0;
+    padding: 10px 0px;
+    border: 2px solid black;    
+    border-radius: 9px;
+
+}
