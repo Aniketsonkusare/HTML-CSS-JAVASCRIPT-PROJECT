@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wheather api</title>
+</head>
+<body>
+    <table border="1" align="center">
+
+    </table>
+</body>
+<script>
+    fetch('curl http://localhost:3000/weather/Ny')
+    .then((res)=>res.json())
+    .then((Response)=>{
+        console.log(Response)
+        // document.write(Response.temperature)
+        // document.write(Response)
+        // document.write(Response.temperature)
+
+        htmldata =''
+        Response.forEach(element => {
+            console.log(element);
+            htmldata += `
+            <tr>
+                <td>${element.temperature}</td>
+                <td>${element.wind}</td>
+                <td>${element.description}</td>
+            </tr>
+            `
+            document.getElementById('displdata').innerHTML = htmldata
+        });
+    })       
+</script>
+</html>
