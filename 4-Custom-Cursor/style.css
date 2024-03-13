@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: #212121;
+    color: white;
+}
+
+.elem{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100px;
+    width: 100%;
+    border-bottom: 2px solid white;
+    position: relative;
+}
+
+.elem h1{
+    font-size: 6vw;
+    z-index: 9;
+    mix-blend-mode: difference;
+}
+
+.elem img{
+    position: absolute;
+    height: 90px;
+    width: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    opacity: 0;
+}
+
+.elem:hover{
+    cursor: pointer;
+}
