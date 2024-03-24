@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+
+.color{
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+    margin: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#gray{
+    background-color: gray;
+}
+
+#red{
+    background-color: red;
+}
+
+#yellow{
+    background-color: yellow;
+}
+
+#aqua{
+    background-color: aqua;
+}
+
+#gray:hover{
+    background-color: darkgray;
+}
+
+#red:hover{
+    background-color: darkred;
+}
+
+#yellow:hover{
+    background-color: rgb(160, 160, 7);
+}
+
+#aqua:hover{
+    background-color: rgb(5, 139, 139);
+}
